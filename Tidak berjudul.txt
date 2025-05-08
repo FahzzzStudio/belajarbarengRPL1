@@ -122,4 +122,70 @@ $ graph
 * e39328f menambahkan file index.html
 
 ASUS@LAPTOP-4K5TNKS4 MINGW64 ~/OneDrive/文档/xirpl1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Tidak berjudul.txt
+        csslanding2.css
+        style.css
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ASUS@LAPTOP-4K5TNKS4 MINGW64 ~/OneDrive/文档/xirpl1 (master)
+$ git add .
+
+ASUS@LAPTOP-4K5TNKS4 MINGW64 ~/OneDrive/文档/xirpl1 (master)
+$ git status
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Tidak berjudul.txt
+        new file:   csslanding2.css
+        modified:   index.html
+        new file:   style.css
+
+
+ASUS@LAPTOP-4K5TNKS4 MINGW64 ~/OneDrive/文档/xirpl1 (master)
+$ git commmit -m "menambahkan file css"
+git: 'commmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+ASUS@LAPTOP-4K5TNKS4 MINGW64 ~/OneDrive/文档/xirpl1 (master)
+$ git commit -am "menambah file css"
+[master d3a8ce6] menambah file css
+ 4 files changed, 605 insertions(+), 3 deletions(-)
+ create mode 100644 Tidak berjudul.txt
+ create mode 100644 csslanding2.css
+ create mode 100644 style.css
+
+ASUS@LAPTOP-4K5TNKS4 MINGW64 ~/OneDrive/文档/xirpl1 (master)
+$ git push
+fatal: unable to access 'https://github.com/FahzzzStudio/belajarbarengRPL1.git/': Could not resolve host: github.com
+
+ASUS@LAPTOP-4K5TNKS4 MINGW64 ~/OneDrive/文档/xirpl1 (master)
+$ git push -u origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 3.37 KiB | 862.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/FahzzzStudio/belajarbarengRPL1.git
+   345e400..d3a8ce6  master -> master
+branch 'master' set up to track 'origin/master'.
+
+ASUS@LAPTOP-4K5TNKS4 MINGW64 ~/OneDrive/文档/xirpl1 (master)
 $
